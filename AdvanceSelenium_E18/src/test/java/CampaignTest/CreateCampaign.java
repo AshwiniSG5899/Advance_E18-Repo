@@ -77,7 +77,7 @@ public class CreateCampaign extends BaseClass{
 	}
 	//@Parameters("browser")
 	@Test()
-	public void createCampaignWithDateTest() throws InterruptedException, IOException
+	public void createCampaignWithCloseDateTest() throws InterruptedException, IOException
 	{
 		
 		
