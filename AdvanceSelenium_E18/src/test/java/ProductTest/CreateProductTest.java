@@ -30,7 +30,7 @@ import genericBaseClassUtility.BaseClass;
 import genericListenerUtility.ListenerImp;
 
 
-public class CreateProduct extends BaseClass {
+public class CreateProductTest extends BaseClass {
 
 	//@Parameters("browser")
 	@Test(groups= {"Integration"})

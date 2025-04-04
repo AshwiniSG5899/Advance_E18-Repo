@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CampaignTest.CreateCampaign">
+      <class name="DDTPractice.DataProviderUsage">
         <methods>
-          <include name="createCampaignTest"/>
-          <include name="createCampaignWithDateTest"/>
+          <include name="testCase"/>
         </methods>
-      </class> <!-- CampaignTest.CreateCampaign -->
+      </class> <!-- DDTPractice.DataProviderUsage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

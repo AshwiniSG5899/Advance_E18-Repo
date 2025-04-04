@@ -37,7 +37,7 @@ import genericBaseClassUtility.BaseClass;
 import genericListenerUtility.ListenerImp;
 
 
-public class CreateCampaign extends BaseClass{
+public class CreateCampaignTest extends BaseClass{
 
 	//@Parameters("browser")
 	

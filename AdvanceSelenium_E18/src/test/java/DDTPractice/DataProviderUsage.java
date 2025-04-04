@@ -1,7 +1,12 @@
 package DDTPractice;
 
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import GenericUtility.ExcelFileUtility;
 
 public class DataProviderUsage {
 
@@ -12,15 +17,21 @@ public class DataProviderUsage {
 	}
 	
 	@DataProvider
-	public Object[][] getData()
+	public Object[][] getData() throws EncryptedDocumentException, IOException
 	{
 		Object[][] objArr=new Object[3][2];
-		objArr[0][0]="John";
-		objArr[0][1]="dave";
-		objArr[1][0]="Annie";
-		objArr[1][1]="ravan";
-		objArr[2][0]="Smith";
-		objArr[2][1]="Louise";
+		
+		ExcelFileUtility ex=new ExcelFileUtility();
+		
+		objArr[0][0]=ex.readingDataFromExcel("DDT", 2, 0);
+		objArr[0][1]=ex.readingDataFromExcel("DDT",2, 1);
+		objArr[1][0]=ex.readingDataFromExcel("DDT", 3, 0);
+		objArr[1][1]=ex.readingDataFromExcel("DDT",3, 1);
+		objArr[2][0]=ex.readingDataFromExcel("DDT", 4, 0);
+		objArr[2][1]=ex.readingDataFromExcel("DDT",4, 1);
+		System.out.println(objArr);
+		
+		
 		return objArr;
 	}
 }

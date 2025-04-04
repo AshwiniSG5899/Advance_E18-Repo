@@ -43,7 +43,7 @@ import genericBaseClassUtility.BaseClass;
 import genericListenerUtility.ListenerImp;
 
 
-public class CreateContact extends BaseClass {
+public class CreateContactTest extends BaseClass {
 
 	//@Parameters("browser")
 	@Test(groups= {"RegressionTest"})
